@@ -144,10 +144,6 @@ footer {
         flex-flow: column-reverse;
     }
 
-    .card figcaption {
-        margin: 0.1em 0;
-    }
-
     .card p {
         margin-top: 1rem;
     }
