@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+    --LIME: #98ec5f;
+    --BR-LIME: #e2ffce;
+    --DK-LIME: #6cbe34;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 1.5rem 'Schibsted Grotesk', sans-serif;
+    min-height: 100vh;
+
+    background-color: var(--LIME);
+    background-image: radial-gradient(var(--BR-LIME), var(--LIME));
+    display: flex;
+    flex-direction: column;
+}
+
+header, nav, main, footer {
+    display: grid;
+    place-content: center;
+    grid-template-columns: 100%;
+    text-align: center;
+}
+
+header, footer {
+    position: sticky;
+    background-color: var(--DK-LIME);
+    color: aliceblue;
+}
+
+header {
+    top: 0;
+}
+
+nav {
+    background-color: #fff;
+    color: #000;
+    padding: 0.5rem;
+    border-bottom: 2px solid #000;
+}
+
+main {
+    flex-grow: 1;
+}
+
+footer {
+    bottom: 0;
+}
+
+/* small media q */
+
+@media screen and (min-width: 576px) {
+    body {
+        background-color: green;
+        background-image: radial-gradient(white, green);
+    }
+
+    nav {
+        display: none
+    }
+}
+
+/* medium media q */
+@media screen and (min-width: 768px) {
+    body {
+        background-color: yellow;
+        background-image: radial-gradient(white, yellow);
+
+    }
+}
+
+/* large media q */
+@media screen and (min-width: 992px) {
+    body {
+        background-color: orangered;
+        background-image: radial-gradient(white, orangered);
+
+    }
+}
+
+/* xl media q */
+@media screen and (min-width: 1200px) {
+    body {
+        background-color: rebeccapurple;
+        background-image: radial-gradient(white, rebeccapurple);
+
+    }
+}
+
+/* landscape mob. media q */
+@media screen and (max-height: 425px) and (min-aspect-ratio: 7/4) {
+    body {
+        background-color: dodgerblue;
+        background-image: radial-gradient(white, dodgerblue);
+
+    }
+
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+
+    nav {
+        display: none
+    }
+}
