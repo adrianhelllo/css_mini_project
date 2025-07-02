@@ -3,23 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- this is necessary in order to enable media queries on websites! -->
-    <title>Media Queries in CSS</title>
+    <title>CSS Mini-Project</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Header</h1>
+        <h1>Our Staff</h1>
         <nav>
-            <h2>Nav</h2>
+            <a href="#profile1">Lime</a>
+            <a href="#profile2">Wierd Lime</a>
+            <a href="#profile3">Evil Lime</a>
         </nav>
     </header>
 
     <main>
-        <h2>Main</h2>
+        <article id="profile1" class="card">
+            <figure>
+                <img src="kepek/lime.jpg" alt="Lime" width="500" height="500">
+                <figcaption>Lime</figcaption>
+            </figure>
+            <p><q>I am the best Lime</q></p>
+        </article>
+        <article id="profile2" class="card">
+            <figure>
+                <img src="kepek/wierdlime.jpg" alt="Wierd Lime" width="500" height="500">
+                <figcaption>Wierd Lime</figcaption>
+            </figure>
+            <p><q>I am Lime's wierd little borther</q></p>
+        </article>
+        <article id="profile3" class="card">
+            <figure>
+                <img src="kepek/lemon.jpg" alt="Evil Lime" width="500" height="500">
+                <figcaption>Evil Lime</figcaption>
+            </figure>
+            <p><q>I am pretending to be a Lime</q></p>
+        </article>
     </main>
 
     <footer>
-        <h2>Footer</h2>
+        <p>&copy; Citrus Co.</p>
     </footer>
 </body>
 </html>

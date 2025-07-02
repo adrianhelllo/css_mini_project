@@ -12,6 +12,12 @@
     box-sizing: border-box;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 body {
     font: 1.5rem 'Schibsted Grotesk', sans-serif;
     min-height: 100vh;
